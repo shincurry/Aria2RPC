@@ -13,9 +13,12 @@
 		8860B6B01E02AE0A001B5E8C /* Aria2RPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8860B6AA1E02AE0A001B5E8C /* Aria2RPC.swift */; };
 		8860B6B11E02AE0A001B5E8C /* Aria2Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8860B6AB1E02AE0A001B5E8C /* Aria2Speed.swift */; };
 		8860B6B21E02AE0A001B5E8C /* Aria2Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8860B6AC1E02AE0A001B5E8C /* Aria2Task.swift */; };
+		FAF5119366FE07A70F2E80CB /* Pods_Aria2RPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62A66B65531FA290E30851DD /* Pods_Aria2RPC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03FF7C1F0DA5B907A005E200 /* Pods-Aria2RPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aria2RPC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aria2RPC/Pods-Aria2RPC.debug.xcconfig"; sourceTree = "<group>"; };
+		62A66B65531FA290E30851DD /* Pods_Aria2RPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aria2RPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8860B6A51E02ADED001B5E8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Aria2RPC/Info.plist; sourceTree = "<group>"; };
 		8860B6A71E02AE0A001B5E8C /* Aria2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aria2.h; path = Aria2RPC/Aria2.h; sourceTree = SOURCE_ROOT; };
 		8860B6A81E02AE0A001B5E8C /* Aria2GlobalStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aria2GlobalStatus.swift; path = Aria2RPC/Aria2GlobalStatus.swift; sourceTree = SOURCE_ROOT; };
@@ -24,6 +27,7 @@
 		8860B6AB1E02AE0A001B5E8C /* Aria2Speed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aria2Speed.swift; path = Aria2RPC/Aria2Speed.swift; sourceTree = SOURCE_ROOT; };
 		8860B6AC1E02AE0A001B5E8C /* Aria2Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Aria2Task.swift; path = Aria2RPC/Aria2Task.swift; sourceTree = SOURCE_ROOT; };
 		889783571CBE105400C12387 /* Aria2RPC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aria2RPC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44E9100BC7DDEACA5FA6E10 /* Pods-Aria2RPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aria2RPC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aria2RPC/Pods-Aria2RPC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF5119366FE07A70F2E80CB /* Pods_Aria2RPC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +48,8 @@
 				889783591CBE105400C12387 /* Aria2RPC */,
 				8860B6A51E02ADED001B5E8C /* Info.plist */,
 				889783581CBE105400C12387 /* Products */,
+				B9A4592852DCD05BE1E594FA /* Pods */,
+				9087A1E2B2649F035D25B5E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,23 @@
 				8860B6AC1E02AE0A001B5E8C /* Aria2Task.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9087A1E2B2649F035D25B5E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62A66B65531FA290E30851DD /* Pods_Aria2RPC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9A4592852DCD05BE1E594FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03FF7C1F0DA5B907A005E200 /* Pods-Aria2RPC.debug.xcconfig */,
+				E44E9100BC7DDEACA5FA6E10 /* Pods-Aria2RPC.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +140,12 @@
 		8897834E1CBE105400C12387 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = ShinCurry;
 				TargetAttributes = {
 					889783561CBE105400C12387 = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -160,13 +184,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aria2RPC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		96E86706EE267F5BDDDE7958 /* [CP] Copy Pods Resources */ = {
@@ -211,14 +238,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -261,14 +294,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -296,10 +335,11 @@
 		};
 		889783601CBE105400C12387 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03FF7C1F0DA5B907A005E200 /* Pods-Aria2RPC.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -315,16 +355,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		889783611CBE105400C12387 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44E9100BC7DDEACA5FA6E10 /* Pods-Aria2RPC.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -340,7 +382,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

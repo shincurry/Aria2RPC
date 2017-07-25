@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Aria2RPC"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "aria2 rpc client for Swift."
 
   s.homepage     = "https://github.com/ShinCurry/Aria2RPC"
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Aria2RPC/*.{swift}"
 
   s.frameworks = "Foundation"
-  s.dependency "Starscream", "~> 2.0.0"
-  s.dependency "SwiftyJSON", "~> 3.1.1"
+  s.dependency "Starscream", :git => 'https://github.com/daltoniam/Starscream.git'
+  s.dependency "SwiftyJSON", :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
 end
