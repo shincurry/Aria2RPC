@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.source_files  = "Classes", "Aria2RPC/*.{swift}"
 
   s.frameworks = "Foundation"
-  s.dependency "Starscream", "~> 2.1.0"
-  s.dependency "SwiftyJSON", "~> 3.1.4"
+  s.dependency "Starscream", "~> 3.0"
+  s.dependency "SwiftyJSON", "~> 4.0"
 end
