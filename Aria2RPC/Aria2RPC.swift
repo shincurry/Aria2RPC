@@ -317,21 +317,21 @@ extension Aria2RPC {
 
 // MARK: - Web socket delegate
 extension Aria2RPC: WebSocketDelegate {
-    public func websocketDidConnect(socket: WebSocket) {
+    public func websocketDidConnect(socket: WebSocketClient) {
         print("WebSocket connected")
         status = .connected
         onConnect?()
     }
-    public func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
+    public func websocketDidDisconnect(socket: WebSocketClient, error: Error?) {
         print("WebSocket disconnected: \(String(describing: error))")
         status = .disconnected
         onDisconnect?()
     }
-    public func websocketDidReceiveData(socket: WebSocket, data: Data) {
+    public func websocketDidReceiveData(socket: WebSocketClient, data: Data) {
         print(data)
     }
     
-    public func websocketDidReceiveMessage(socket: WebSocket, text: String) {
+    public func websocketDidReceiveMessage(socket: WebSocketClient, text: String) {
         do {
             let results = try JSON(data: text.data(using: .utf8)!)
             
